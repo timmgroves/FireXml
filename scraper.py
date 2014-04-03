@@ -1,4 +1,4 @@
-from BeautifulSoup import BeautifulStoneSoup as Soup
+from bs4 import BeautifulSoup as Soup
 import requests
 import csv
 
