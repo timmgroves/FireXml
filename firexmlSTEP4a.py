@@ -7,7 +7,6 @@
 
 
 #STEP 1: IMPORT 
-from bs4 import BeautifulSoup
 from BeautifulSoup import BeautifulStoneSoup as Soup 
 import requests
 import csv
@@ -51,8 +50,8 @@ print export
 #STEP 6: Write CSV
 
 f = open(firelist, w)
-wr = csv.writer(f, quoting=csv..QUOTE_ALL)
-wr.writerow(export)
+# wr = csv.writer(f, quoting=csv..QUOTE_ALL)
+# wr.writerow(export)
 
 
 
