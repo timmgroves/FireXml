@@ -22,7 +22,8 @@ data = input.text
 
 
 #STEP 3: MAKE A SOUP
-soup = Soup(data)
+xml= data
+soup = Soup(xml)
 print soup.prettify()
 
 
@@ -33,15 +34,23 @@ export = []
 update = soup.update_from_db_time.renderContents()
 #update = updateZ.renderContents()
 ## make Z names
-main = soup.prime_street.renderContents()
-streets = soup.cross_streets.renderContents()
-time2 = soup.dispatch_time.renderContents()
-number = soup.event_num.renderContents() 
-event = soup.event_type.renderContents()
-alarm = soup.alarm_lev.renderContents()
-beat = soup.beat.renderContents()
-units = soup.units_disp.renderContents()
-
+mainZ = soup.prime_street
+streetsZ = soup.cross_streets
+time2Z = soup.dispatch_time
+numberZ = soup.event_num 
+eventZ = soup.event_type
+alarmZ = soup.alarm_lev
+beatZ = soup.beat
+unitsZ = soup.units_disp
+## make names with rendered content
+main = mainZ.renderContents()
+streets = streetsZ.renderContents()
+time2 = time2Z.renderContents()
+number = numberZ.renderContents()
+event = eventZ.renderContents()
+alarm = alarmZ.renderContents()
+beat = beatZ.renderContents()
+units = unitsZ.renderContents()
 # append to export
 export.append([update, main, streets, time2, number, event, alarm, beat, units])
 
