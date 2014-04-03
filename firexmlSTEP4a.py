@@ -13,24 +13,32 @@ from scraper import Scraper
 url = "http://www.toronto.ca/fire/cadinfo/livecad.xml"
 scraper = Scraper(url)
 soup = Soup(scraper.text)
-# soup = Soup(scraper.text, "xml")
 
-print soup
-# print scraper.soup.find_all("event")
+f = open('output.txt', 'w')
+f.write('')
+f.close()
 
-#STEP 4: PARSE (SLOPPY CLEAN THIS LATER)
-export = []
-# NOTE 'update' is from a different place in xml file
-# update = soup.update_from_db_time.renderContents()
-# main = soup.prime_street.renderContents()
-# streets = soup.cross_streets.renderContents()
-# time2 = soup.dispatch_time.renderContents()
-# number = soup.event_num.renderContents() 
-# event = soup.event_type.renderContents()
-# alarm = soup.alarm_lev.renderContents()
-# beat = soup.beat.renderContents()
-# units = soup.units_disp.renderContents()
-# # 
+date = soup.find('update_from_db_time').text.strip()
+
+count = 1
+for item in soup.find_all("event"):
+    
+    f = open('output.txt', 'a')
+    f.write('Event #' + str(count) + '\n' + '--------' + '\n')
+    f.write('Date: ' + date + '\n')
+    count += 1
+    for tag in item:
+        if (str(tag.name) == 'None'):
+            continue
+        f.write(str(tag.name) + ': ')
+        text = tag.string.strip()
+        f.write(text)
+        f.write('\n')
+    f.write('\n')
+    f.close()
+    
+# print soup.find_all("event").renderContents()
+
 # # append to export
 # export.append([update, main, streets, time2, number, event, alarm, beat, units])
 # 

@@ -1,0 +1,60 @@
+Event #1
+--------
+Date: 2014-04-02 21:57:54
+prime_street: IRWIN RD, ET
+cross_streets: WEST HUMBER TRL / TURPIN AVE
+dispatch_time: 2014-04-02 16:48:18
+event_num: F14029048
+event_type: Fire - Residential
+alarm_lev: 1
+beat: 415
+units_disp: R413, P415, P146, R441, A415, C41, R412, A441, LA421, S445, P413, R413, P413,
+
+Event #2
+--------
+Date: 2014-04-02 21:57:54
+prime_street: TRETHEWEY DR, NY
+cross_streets: PLATINUM DR / WW W PLATINUM S TRETHEWEY
+dispatch_time: 2014-04-02 21:24:09
+event_num: F14029125
+event_type: Hazmat Level 1
+alarm_lev: 0
+beat: 442
+units_disp: P442,
+
+Event #3
+--------
+Date: 2014-04-02 21:57:54
+prime_street: , TT
+cross_streets: BRIAR HILL AVE / BATHURST ST
+dispatch_time: 2014-04-02 21:36:45
+event_num: F14029128
+event_type: Vehicle - Personal Injury
+alarm_lev: 0
+beat: 135
+units_disp: A135,
+
+Event #4
+--------
+Date: 2014-04-02 21:57:54
+prime_street: VAN DUSEN BLVD, ET
+cross_streets: CARYSFORT RD / ALLERTON RD
+dispatch_time: 2014-04-02 21:48:43
+event_num: F14029132
+event_type: Medical - Unconscious
+alarm_lev: 0
+beat: 431
+units_disp: P431,
+
+Event #5
+--------
+Date: 2014-04-02 21:57:54
+prime_street: THORNCLIFFE PARK DR, EY
+cross_streets: GRANDSTAND PL / WEST DON RIVER TRL
+dispatch_time: 2014-04-02 21:49:03
+event_num: F14029133
+event_type: Medical - Chest Pains
+alarm_lev: 0
+beat: 322
+units_disp: A322,
+
